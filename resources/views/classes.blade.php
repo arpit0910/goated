@@ -42,9 +42,9 @@
 
     <section class="reveal" style="text-align: center;">
         <h2>JOIN THE MOVEMENT</h2>
-        <p style="color: var(--dim); margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto; font-size: clamp(1rem, 2vw, 1.2rem); line-height: 1.6;">
-            The next selection cycle starts soon. Secure your trial spot today and witness the GOATED standard in person.
+        <p style="color: var(--dim); margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+            The next selection cycle starts soon. Secure your trial spot today and witness the GOATED standard in person, mentored by finalists of DID Little Master & Hip Hop India.
         </p>
-        <a href="{{ route('contact') }}" class="btn">Book a Trial</a>
+        <a href="{{ route('contact') }}" class="btn">Book Trial Class</a>
     </section>
 @endsection

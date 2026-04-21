@@ -82,25 +82,25 @@
             </div>
         </div>
 
-        <!-- Stats Integrated -->
+        <!-- Stats Integrated: Full Breakout -->
         <div class="reveal"
-            style="background: var(--fg); color: var(--bg); padding: clamp(3rem, 8vw, 6rem) 8%; margin-top: clamp(6rem, 15vh, 10rem); width: 100vw; margin-left: calc(-8%);">
-            <div class="stats-grid" style="margin-top: 0;">
-                <div class="stat-item">
-                    <h4>500+</h4>
-                    <p style="color: var(--bg); letter-spacing: 2px;">DANCERS TRAINED</p>
+            style="background: var(--fg); color: var(--bg); padding: clamp(4rem, 10vw, 8rem) 0; margin-top: clamp(6rem, 15vh, 10rem); width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;">
+            <div class="stats-grid"
+                style="margin-top: 0; max-width: 1200px; margin-left: auto; margin-right: auto; padding: 0 5%; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem;">
+                <div class="stat-item" style="text-align: center;">
+                    <h4 style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 0.5rem;">500+</h4>
+                    <p style="color: var(--bg); letter-spacing: 2px; font-size: 0.75rem; font-weight: 700;">DANCERS TRAINED
+                    </p>
                 </div>
-                <div class="stat-item">
-                    <h4>12+</h4>
-                    <p style="color: var(--bg); letter-spacing: 2px;">YEARS OF LEGACY</p>
+                <div class="stat-item" style="text-align: center;">
+                    <h4 style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 0.5rem;">10+</h4>
+                    <p style="color: var(--bg); letter-spacing: 2px; font-size: 0.75rem; font-weight: 700;">CELEBRITY
+                        PROJECTS</p>
                 </div>
-                <div class="stat-item">
-                    <h4>15+</h4>
-                    <p style="color: var(--bg); letter-spacing: 2px;">NATIONAL AWARDS</p>
-                </div>
-                <div class="stat-item">
-                    <h4>100%</h4>
-                    <p style="color: var(--bg); letter-spacing: 2px;">RAW PASSION</p>
+                <div class="stat-item" style="text-align: center;">
+                    <h4 style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 0.5rem;">15+</h4>
+                    <p style="color: var(--bg); letter-spacing: 2px; font-size: 0.75rem; font-weight: 700;">ELITE
+                        CHOREOGRAPHERS</p>
                 </div>
             </div>
         </div>

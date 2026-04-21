@@ -548,6 +548,12 @@ footer {
     .card p {
         font-size: 0.85rem;
         line-height: 1.5;
+        color: var(--dim);
+    }
+    
+    .testimonial-card::after {
+        color: var(--dim) !important;
+        opacity: 0.3;
     }
 
     .stats-grid {
