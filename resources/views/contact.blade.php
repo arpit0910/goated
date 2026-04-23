@@ -11,26 +11,36 @@
                 Have questions about batches, fees, or private sessions? Drop us a message below and the GOATED team will get back to you within 24 hours.
             </p>
 
-            <form id="contactForm" action="{{ route('contact.submit') }}" method="POST">
+            @if(session('success'))
+                <div style="background: rgba(0, 255, 0, 0.1); border: 1px solid #0f0; color: #0f0; padding: 1.5rem; margin-bottom: 2rem; font-size: 0.9rem;">
+                    {{ session('success') }}
+                </div>
+            @endif
+
+            <form action="{{ route('contact.submit') }}" method="POST">
                 @csrf
                 <div class="form-group">
                     <label for="name">Your Name</label>
-                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                    <input type="text" id="name" name="name" required placeholder="John Doe" value="{{ old('name') }}">
                 </div>
                 <div class="form-group">
                     <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    <input type="email" id="email" name="email" required placeholder="john@example.com" value="{{ old('email') }}">
                 </div>
                 <div class="form-group">
-                    <label for="batch">Interested Batch</label>
-                    <input type="text" id="batch" name="batch" placeholder="e.g. Urban Choreo / Beginners">
+                    <label for="dance_class_id">Interested Batch</label>
+                    <select id="dance_class_id" name="dance_class_id" style="width: 100%; background: transparent; border: none; border-bottom: 1px solid var(--border); padding: 1rem 0; color: #fff; font-family: inherit; font-size: 1rem; border-radius: 0;">
+                        <option value="" style="background: #000;">SELECT A BATCH (OPTIONAL)</option>
+                        @foreach($classes as $class)
+                            <option value="{{ $class->id }}" style="background: #000;">{{ strtoupper($class->name) }}</option>
+                        @endforeach
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="message">Your Message</label>
-                    <textarea id="message" name="message" rows="5" required placeholder="Tell us how we can help you..."></textarea>
+                    <textarea id="message" name="message" rows="5" required placeholder="Tell us how we can help you...">{{ old('message') }}</textarea>
                 </div>
                 <button type="submit" class="btn">Send Message</button>
-                <p id="form-status" style="margin-top: 1rem; font-size: 0.8rem; color: #0f0; display: none;">Your query has been sent successfully!</p>
             </form>
         </div>
     </section>
@@ -70,16 +80,3 @@
         </div>
     </section>
 @endsection
-
-@push('scripts')
-<script>
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-        // Since we don't have a backend route yet, we'll keep the mock behavior
-        if (!this.action.includes('submit')) {
-            e.preventDefault();
-            document.getElementById('form-status').style.display = 'block';
-            this.reset();
-        }
-    });
-</script>
-@endpush
