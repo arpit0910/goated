@@ -4,7 +4,7 @@
 
 @section('content')
     <section>
-        <h1 class="reveal">ASK A<br><span class="outline-text">QUERY</span></h1>
+        <h1 class="reveal page-hero-title">ASK A<br><span class="outline-text">QUERY</span></h1>
         
         <div class="contact-section reveal" style="margin-top: clamp(3rem, 10vh, 5rem);">
             <p style="font-size: clamp(1rem, 2vw, 1.2rem); color: var(--dim); margin-bottom: 4rem; line-height: 1.6;">

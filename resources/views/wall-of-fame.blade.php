@@ -4,7 +4,7 @@
 
 @section('content')
     <section>
-        <h1 class="reveal">WALL OF<br><span class="outline-text">FAME</span></h1>
+        <h1 class="reveal page-hero-title">WALL OF<br><span class="outline-text">FAME</span></h1>
         <p class="reveal" style="max-width: 600px; margin-top: 2rem;">
             Our journey through the lenses. Moments captured with some of the industry's biggest legends and inspirations who have visited GOATED Jaipur.
         </p>

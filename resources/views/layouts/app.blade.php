@@ -41,8 +41,7 @@
         <footer>
             <div class="footer-container">
                 <div>
-                    <div class="footer-logo"
-                        style="margin-bottom: 2rem; display: flex; align-items: center; gap: 1rem; font-family: 'Syncopate', sans-serif; font-weight: 700;">
+                    <div class="footer-logo">
                         <img src="{{ asset('images/logo.png') }}" alt="GOATED Logo"
                             style="height: 50px; width: auto; filter: drop-shadow(0 0 10px rgba(255,255,255,0.2));">
                         GOATED JAIPUR

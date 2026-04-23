@@ -4,7 +4,7 @@
 
 @section('content')
     <section>
-        <h1 class="reveal">TRAIN<br><span class="outline-text">HARDER</span></h1>
+        <h1 class="reveal page-hero-title">TRAIN<br><span class="outline-text">HARDER</span></h1>
 
         @if (session('error'))
             <div
@@ -31,6 +31,7 @@
                         <div
                             style="width: 100%; height: 200px; margin-bottom: 2rem; overflow: hidden; border: 1px solid var(--border);">
                             <img src="{{ asset($classImagePath) }}" alt="{{ $class->name }}"
+                                onerror="this.src='https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&q=80&w=800'"
                                 style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) brightness(0.8);">
                         </div>
                     @endif
@@ -47,7 +48,7 @@
                         @foreach ($class->prices as $price)
                             <div
                                 style="margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.05);">
-                                <div
+                                <div class="price-row"
                                     style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.8rem; flex-wrap: wrap; gap: 1rem;">
                                     <div style="flex: 1; min-width: 150px;">
                                         <div style="display: flex; align-items: center; gap: 0.8rem; flex-wrap: wrap;">

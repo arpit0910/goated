@@ -4,7 +4,7 @@
 
 @section('content')
     <section>
-        <h1 class="reveal" style="word-break: normal;">OUR<br><span class="outline-text">PHILOSOPHY</span></h1>
+        <h1 class="reveal page-hero-title">OUR<br><span class="outline-text">PHILOSOPHY</span></h1>
 
         <div class="reveal" style="max-width: 1200px; margin-top: clamp(3rem, 10vh, 5rem);">
             <h2 class="reveal">THE "GOATED" LEGACY</h2>
@@ -81,7 +81,7 @@
 
     <section class="reveal" style="background: #111; padding: clamp(4rem, 10vh, 7rem) 8%;">
         <div class="grid"
-            style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); align-items: center; gap: clamp(2rem, 6vw, 4rem);">
+            style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); align-items: center; gap: clamp(2rem, 6vw, 4rem);">
             <div class="architect-visual" style="position: relative;">
                 <div class="card"
                     style="transform: rotate(-1.5deg); max-width: 480px; margin: 0 auto; background: #050505; border: 1px solid rgba(255,255,255,0.1);">
