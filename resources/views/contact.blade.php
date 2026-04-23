@@ -39,10 +39,10 @@
         <div class="grid">
             <div>
                 <h2>VISIT US</h2>
-                <p style="color: var(--dim); font-size: 1.2rem; line-height: 1.8;">
-                    Plot No. 12, Urban Hub,<br>
-                    Malviya Nagar, Sector 5,<br>
-                    Jaipur, Rajasthan 302017
+                <p style="color: var(--dim); font-size: 1.1rem; line-height: 1.8;">
+                    Above DK Jewellers, 3rd Floor,<br>
+                    Vijay Path, Mansarovar Sector 7, Sector 12,<br>
+                    Mansarovar, Jaipur, Rajasthan 302020
                 </p>
             </div>
             <div>
@@ -58,11 +58,15 @@
                 </div>
             </div>
         </div>
-        <div style="width: 100%; height: 400px; background: #111; border: 1px solid var(--border); margin-top: 4rem; position: relative; overflow: hidden;">
-            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: var(--dim); text-align: center;">
-                <p>GOOGLE MAPS INTEGRATION</p>
-                <p style="font-size: 0.8rem; margin-top: 1rem;">SEC 5, MALVIYA NAGAR, JAIPUR</p>
-            </div>
+        <div style="width: 100%; height: 450px; border: 1px solid var(--border); margin-top: 4rem; position: relative; overflow: hidden; filter: grayscale(1) invert(0.9) contrast(1.2);">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.89736186407!2d75.7645167!3d26.8617822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db449d76c9713%3A0x13f9601e6fd091ca!2sD.K.%20Jewellers!5e0!3m2!1sen!2sin!4v1713854123456!5m2!1sen!2sin" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
         </div>
     </section>
 @endsection

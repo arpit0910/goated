@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'GOATED JAIPUR | Urban Dance Studio')</title>
+    <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('favicon.png') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <meta name="description" content="@yield('meta_description', 'GOATED Jaipur - Generation Of Aspiring Talent And Educating Dancers. The ultimate urban dance experience in Jaipur.')">
 </head>
@@ -13,7 +15,7 @@
 
     <nav>
         <a href="{{ route('home') }}" class="logo">
-            <img src="{{ asset('images/logo.png') }}" alt="GOATED Logo">
+            <img src="{{ asset('images/logo.png') }}" alt="GOATED Logo" class="logo-img">
             <span>GOATED</span>
         </a>
         <div class="nav-links" id="navLinks">
@@ -32,8 +34,8 @@
     <footer>
         <div class="footer-container">
             <div>
-                <div class="footer-logo" style="margin-bottom: 2rem;">
-                    <img src="{{ asset('images/logo.png') }}" alt="GOATED Logo">
+                <div class="footer-logo" style="margin-bottom: 2rem; display: flex; align-items: center; gap: 1rem; font-family: 'Syncopate', sans-serif; font-weight: 700;">
+                    <img src="{{ asset('images/logo.png') }}" alt="GOATED Logo" style="height: 50px; width: auto; filter: drop-shadow(0 0 10px rgba(255,255,255,0.2));">
                     GOATED JAIPUR
                 </div>
                 <p style="color: var(--dim); font-size: 0.9rem; line-height: 1.6; max-width: 350px;">
